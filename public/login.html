@@ -97,12 +97,11 @@ unset($_SESSION['success']);
         </nav>
     </header>
 
-    <!-- Login Section -->
+    
     <section class="section intro-section">
         <div class="intro-content" style="max-width:400px; margin:auto; text-align:left;">
             <h2>Login to Encora</h2>
 
-            <!-- Success/Error Messages -->
             <?php if ($success): ?>
                 <p style="color:green; font-weight:bold;"><?= htmlspecialchars($success) ?></p>
             <?php endif; ?>
@@ -110,7 +109,6 @@ unset($_SESSION['success']);
                 <p style="color:red; font-weight:bold;"><?= htmlspecialchars($error) ?></p>
             <?php endif; ?>
 
-            <!-- Login Form -->
             <form method="post" action="">
                 <label>Email</label><br>
                 <input name="email" type="email" required class="form-input"><br>
@@ -122,7 +120,6 @@ unset($_SESSION['success']);
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer section1">
         <div class="footer-content">
             <div class="footer-links">
